@@ -28,6 +28,10 @@ grails.project.dependency.resolution = {
      }
 
 	plugins {
+
+		build ":tomcat:$grailsVersion", {
+            export = false
+        }
 		
 		build  ':release:1.0.0.RC3'
         
