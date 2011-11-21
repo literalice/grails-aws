@@ -17,6 +17,7 @@ grails.project.dependency.resolution = {
     }
 
 	dependencies {
+        build 'org.apache.httpcomponents:httpclient:4.1.2'
         compile 'net.java.dev.jets3t:jets3t:0.8.1'
         compile 'javax.mail:mail:1.4.1'
         compile 'commons-httpclient:commons-httpclient:3.1'
@@ -28,6 +29,10 @@ grails.project.dependency.resolution = {
      }
 
 	plugins {
+
+		build ":tomcat:$grailsVersion", {
+            export = false
+        }
 		
 		build  ':release:1.0.0.RC3'
         
