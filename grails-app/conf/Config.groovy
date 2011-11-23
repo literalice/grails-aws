@@ -31,7 +31,7 @@ grails {
 			credentials {
 				//accessKey = "access-key"
 				//secretKey = "secret-key"
-				properties = "/Users/blanq01/Desktop/AwsCredentials.properties"		
+				properties = "${System.getProperty('user.home')}/.aws/credentials.properties"
 			}
 			s3 {
 				bucket = "grails-aws-test-bucket-20110515"
@@ -39,7 +39,7 @@ grails {
 				acl    = "public"
 			}
 			ses {
-				from     = "lucastex@gmail.com"
+				from     = "literalice@monochromeroad.com"
 				//enabled  = false
 			}
 		}
